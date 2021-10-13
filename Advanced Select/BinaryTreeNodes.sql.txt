@@ -1,0 +1,1 @@
+select N,IF(p is NULL,'Root',IF(B.N IN(select p from BST),'Inner','Leaf')) from BST AS B ORDER BY N;
